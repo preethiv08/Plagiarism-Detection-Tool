@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Plagiarism Detection</title>
+</head>
+<body>
+    <h1>Plagiarism Detection</h1>
+    <form action="/plagiarism" method="post">
+        <label for="user_input">Enter Text:</label>
+        <textarea id="user_input" name="user_input" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Detect Plagiarism">
+    </form>
+</body>
+</html>
